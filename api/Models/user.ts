@@ -7,9 +7,9 @@ const UserSchema = new Schema(
         lastName: { type: String, trim: true ,required:true},
         email: { type: String, trim: true ,required:true, unique: true},
         password: { type: String, trim: true ,required:true},
-        profileImage: { type: String, trim: true,default:null }
+        // profileImage: { type: String, trim: true,default:null }
     },
     { timestamps: true }
 );
-const UserProfile=mongoose.model('UserProfile', UserSchema)
-export default UserProfile
+const User=mongoose.model('UserProfile', UserSchema)
+export default User;
