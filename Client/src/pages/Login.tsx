@@ -40,7 +40,6 @@ export default function Login() {
     <div className="p-3 max-w-lg mx-auto">
     <h1 className="text-3xl text-center font-semibold my-10">Login</h1>
     <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
-
      <input type="email" placeholder="Email" id="email" className="bg-slate-100 p-3 shadow appearance-none border focus:outline-none focus:shadow-outline rounded-lg"  onChange={handleChange}/>
      <input type="password" placeholder="Password" id="password" className="bg-slate-100 p-3 rounded-lg shadow appearance-none border focus:outline-none focus:shadow-outline"  onChange={handleChange}/>
      <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded uppercase" disabled={loading}>  {loading ? 'Loading...' : 'Login'}</button>
